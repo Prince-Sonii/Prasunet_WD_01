@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightsteelblue;
+}
+.nav_container {
+    position: fixed;
+    width: 100%;
+}
+.nav_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: plum;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+}
+.nav_hamburger {
+    margin: 5px 5px;
+    align-items:start;
+
+}
+.nav_ham_icon {
+    padding: 5px 10px;
+    background-color: rgb(196, 95, 196);
+}
+.nav_items_logo {
+    align-items: center;
+}
+.nav_logo_text {
+    margin: 0;
+    font-family:sans-serif;
+    font-size: medium;
+}
+.nav_list_items {
+    display: none;
+}
+.nav_items_searchbox {
+    display: none;
+}
+@media (min-width:768px) {
+    .nav_items {
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+    .nav_hamburger {
+        display: none;
+    }
+    .nav_logo_text {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .for_gaping {
+        display: none;
+    }
+    .nav_items_searchbox {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+    .nav_items_search {
+        width: 60%;
+        padding: 2px 5px;
+        border: 2px solid darkblue;
+        border-radius: 10px;
+        outline: none;
+        background-color: rgba(229, 229, 229, 0.892);
+    }
+    .nav_items_search:hover {
+        background-color: whitesmoke;
+    }
+    .nav_items_dropdown {
+        background-color: rgb(247, 178, 188);
+        padding: 2px 3px;
+        border: 1px solid black;
+        border-radius: 9px;
+        font-weight: 500;
+    }
+    .nav_drop_menu {
+        color: black;
+        padding: 0px 20px;
+        text-decoration: none;
+    }
+}
+@media (min-width:1024px) {
+    .nav_list_items {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        gap: 24px;
+        font-size: 16px;
+        font-weight: 500;
+        list-style: none;
+        transition: all;
+    }
+    .nav_list_child:hover {
+        cursor: pointer;
+        opacity: .7;
+    }
+    .nav_items_search {
+        width: 100%;
+    }
+    .nav_drop_down {
+        display: none;
+    }
+}
