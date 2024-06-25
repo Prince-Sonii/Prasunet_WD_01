@@ -24,5 +24,5 @@ searchButton.onclick = ()=>{
     searchButton.style.scale = .9;
     setTimeout(()=>{
         searchButton.style.scale = 1;
-    },110)
+    },70)
 }
