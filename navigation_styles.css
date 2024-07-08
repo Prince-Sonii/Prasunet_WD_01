@@ -13,9 +13,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #dbd7cd;
-}
-.nav_items:hover {
-    opacity: 1;
+    transition: opacity .4s ease;
 }
 .nav_hamburger {
     margin: 5px 5px;
@@ -308,8 +306,20 @@ body {
     .aboutus {
         margin: 120px 0px;
     }
+    .benefit_container {
+        height:26vw;
+    }
     .intern {
         padding: 20px 7px;
+        transition: all .5s;
+    }
+    .grow {
+        transition: all .5s;
+    }
+    .benefit_container:hover .intern,
+    .benefit_container:hover .grow {
+        transform: skewY(0deg);
+        margin: 2px;
     }
     .footer_container {
         margin-top: 120px 0px;
